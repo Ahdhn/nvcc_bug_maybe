@@ -1,4 +1,8 @@
 # NVCC Bug? 
+## Update 
+The bug was fixed in [CUDA 11.5](https://docs.nvidia.com/cuda/archive/11.5.0/cuda-toolkit-release-notes/index.html#cuda-compiler-resolved-issues)
+
+## Description  
 The goal of this code is to showcase a possible compiler bug with NVCC. The bug seems to happen when a kernel uses a lambda function that captures an object by value. The code is too simple to parse (less than 50 lines). The relevant part shown below where `Vector` is a simple class that defines its own copy constructor, destructor, and assignment operator 
 
 ```
